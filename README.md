@@ -13,7 +13,7 @@
 | Language | File |
 |----------|------|
 | 🇺🇸 English | [English Spec (v1.0.0-rc3)](docs/opl-lang-spec-en-v1.0.0-rc3.md) |
-| 🇨🇳 中文 | [`docs/opl-lang-spec-zh-v1.0.0-rc3.md`](docs/opl-lang-spec-zh-v1.0.0-rc3.md) |
+| 🇨🇳 中文 | [中文规范 (v1.0.0-rc3)](docs/opl-lang-spec-zh-v1.0.0-rc3.md) |
 
 ### 📐 JSON Schema
 - [`schema/opl-lang-1.0.schema.json`](schema/opl-lang-1.0.schema.json)
