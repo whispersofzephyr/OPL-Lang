@@ -1,5 +1,3 @@
-# OPL‑Lang
-
 A lean DSL for describing and generating equity option strategies.  
 本仓库包含用于描述与生成股票期权策略的轻量 DSL 语言规范（中英双语）。
 
