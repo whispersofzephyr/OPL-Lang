@@ -1,6 +1,6 @@
 [← 回到目录](index.md)
 
-📘 [Click here for English version ➜ OPL‑Lang Whitepaper v1.0.0‑rc2](opl-lang-spec-en-v1.0.0-rc2.md)
+📘 [Click here for English version ➜ OPL‑Lang Whitepaper v1.0.0‑rc3](opl-lang-spec-en-v1.0.0-rc3.md)
 
 # OPL‑Lang 规范 — 完整简体中文版 **v 1.0.0‑rc2**
 
