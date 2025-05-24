@@ -1,40 +1,37 @@
-# OPL‑Lang
+# OPL-Lang
 
-*A lean DSL for describing, generating, and evaluating equity option strategies.*
+*A lean DSL for describing, generating, and evaluating equity-option strategies.*
 
-![](https://img.shields.io/badge/License-MIT-green.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-📘 [**View the live whitepaper site ➜**](https://whispersofzephyr.github.io/opl-lang/)
+📘 **[Live white-paper site →](https://whispersofzephyr.github.io/opl-lang/)**
 
 ---
 
 ### 📑 Specifications
 
-- 🇺🇸 [English Spec (v1.0.0)](https://chatgpt.com/c/docs/opl-lang-spec-en-v1.0.0.md)
-- 🇨🇳 [中文规范 (v1.0.0)](https://chatgpt.com/c/docs/opl-lang-spec-zh-v1.0.0.md)
+| Language | File |
+|----------|------|
+| 🇺🇸 English | [`docs/opl-lang-spec-en-v1.0.0-rc3.md`](docs/opl-lang-spec-en-v1.0.0-rc3.md) |
+| 🇨🇳 中文 | [`docs/opl-lang-spec-zh-v1.0.0-rc3.md`](docs/opl-lang-spec-zh-v1.0.0-rc3.md) |
 
 ### 📐 JSON Schema
-
-- [`schema/opl-lang-1.0.schema.json`](https://chatgpt.com/c/schema/opl-lang-1.0.schema.json)
+- [`schema/opl-lang-1.0.schema.json`](schema/opl-lang-1.0.schema.json)
 
 ---
 
-## 🧠 What is OPL‑Lang?
+## 🧠 What is OPL-Lang?
 
-**OPL‑Lang is a domain-specific language (DSL) designed to express options strategies — clearly, semantically, and machine-readably.**
+**OPL-Lang is a domain-specific language (DSL) that expresses option-strategy structure, intent, and constraints in a way that is both human-writable and machine-parsable.**
 
-It is not a pricing engine or a backtest framework.
+*It is not* a pricing engine or back-test framework.  
+Think of it as **“SQL for option strategies”**: you describe *what* you want; execution layers decide *how* to price, back-test, or trade it.
 
-Its goal is to describe the structure, intent, and risk constraints of a strategy in a way that is:
+Key design goals:
 
-- ✅ Human-writable
-- ✅ Machine-parsable
-- ✅ Implementation-agnostic
-
-**You talk to the machine in OPL‑Lang.** The machine then executes — using Python, Rust, C++, or whatever environment is appropriate.
-
-> Think of OPL‑Lang as the "SQL of options strategies": express the logic, and let execution layers handle the rest.
-> 
+- ✅ **Readable** by traders & quants  
+- ✅ **Deterministic** grammar for compilers  
+- ✅ **Implementation-agnostic** (Python, Rust, C++, …)
 
 ---
 
@@ -43,8 +40,8 @@ Its goal is to describe the structure, intent, and risk constraints of a strateg
 ```
 docs/
   ├─ index.md                   ← GitHub Pages homepage
-  ├─ opl-lang-spec-en-v1.0.0.md
-  └─ opl-lang-spec-zh-v1.0.0.md
+  ├─ opl-lang-spec-en-v1.0.0-rc3.md
+  └─ opl-lang-spec-zh-v1.0.0-rc3.md
 schema/
   └─ opl-lang-1.0.schema.json
 samples/                        ← (optional) strategy examples
@@ -59,8 +56,8 @@ LICENSE                         ← MIT license declaration
 
 Release tags follow [Semantic Versioning 2.0.0](https://semver.org/):
 
-- `v1.0.0` — current release
-- Future versions may include sample libraries, runtime engines, or IDE integration
+- **`v1.0.0-rc3`** — current public candidate  
+- Future: tag **`v1.0.0`** after schema & sample libraries stabilise
 
 ---
 
@@ -70,12 +67,10 @@ MIT © 2025 OPL-Lang Authors
 
 ---
 
-## 🤝 Collaborators Welcome
+## 🤝 Contributors Welcome!
 
-We're looking for contributors interested in implementing the OPL‑Lang parser, playground, or runtime.
+Interested in parsers, playgrounds, or runtime engines?  
+Open an issue or submit a PR — prototypes & discussions are encouraged.
 
-If you're a developer passionate about DSLs, compilers, or financial systems, feel free to open an issue or get in touch via GitHub.
+欢迎熟悉编程语言、编译器或量化系统的开发者参与贡献！
 
-PRs, prototypes, and discussions are welcome.
-
-欢迎熟悉编程语言、编译器、或者量化系统的开发者一起合作。有兴趣请提 Issue 或直接 PR。
