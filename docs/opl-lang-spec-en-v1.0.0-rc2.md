@@ -1,6 +1,5 @@
 [← Back to index](index.md)
 
-📘 For English version — you’re here  
 📙 [点击查看中文版本 ➜ OPL‑Lang 规范 v1.0.0‑rc2](opl-lang-spec-zh-v1.0.0-rc2.md)
 
 # OPL-Lang White Paper – lean specification **v 1.0.0-rc2**
