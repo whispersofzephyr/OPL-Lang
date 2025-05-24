@@ -48,3 +48,14 @@ Release tags follow [Semantic Versioning 2.0.0](https://semver.org/):
 ## ⚖️ License
 
 MIT © 2025 OPL-Lang Authors
+
+---
+
+## 🤝 Collaborators Welcome
+
+We’re looking for contributors interested in building tools for OPL‑Lang — including the parser, playground, or DSL runtime.
+
+If you're passionate about DSLs, compilers, or financial systems, feel free to open an issue or get in touch via GitHub.  
+PRs, prototypes, and design discussions are all welcome.
+
+欢迎熟悉编程语言、编译器、或量化系统的开发者一起参与合作。有兴趣可通过 Issue 联系，或直接提交 PR。
