@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-📘 **[View the live whitepaper site ➜](https://your-username.github.io/opl-lang/)**
+📘 **[View the live whitepaper site ➜](https://whispersofzephyr.github.io/opl-lang/)**
 
 ---
 
