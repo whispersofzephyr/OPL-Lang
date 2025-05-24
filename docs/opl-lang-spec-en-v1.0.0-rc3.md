@@ -1,6 +1,8 @@
 [← Back to index](https://www.notion.so/index.md)
 
-📙 [点击查看中文版本 ➜ OPL‑Lang 规范 v1.0.0‑rc3](https://www.notion.so/opl-lang-spec-zh-v1.0.0-rc3.md)
+📙 [点击查看中文版本 ➜ OPL‑Lang 规范 v1.0.0‑rc3](opl-lang-spec-zh-v1.0.0-rc3.md)
+- 📘 [English Spec](opl-lang-spec-en-v1.0.0-rc3.md)
+- 📙 [中文规范](opl-lang-spec-zh-v1.0.0-rc3.md)
 
 # OPL-Lang White Paper – lean specification **v 1.0.0-rc3**
 
