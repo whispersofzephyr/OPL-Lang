@@ -327,24 +327,7 @@ S = Condor(Call, K1=480, K2=520, T=30d)
 
 ---
 
-## 12 Versioning & Interoperability
-
-OPL‑Lang follows **Semantic Versioning 2.0.0**:
-
-* **MAJOR** – incompatible grammar changes (e.g. 2.0).
-* **MINOR** – backwards‑compatible feature additions (e.g. 1.1).
-* **PATCH** – editorial fixes, no grammar impact (e.g. 1.0.1).
-
-A source file **MUST** begin with a magic header within the first 256 bytes:
-
-```text
-opl-lang 1.0   # comment text allowed after version token
-```
-
-Tools **MUST** reject files whose major version token they do not recognise.
-
----
-## 13 Appendix C — Language Integration Flow (Natural Language ➜ Strategy ➜ Execution)
+## 12 Appendix C — Language Integration Flow (Natural Language ➜ Strategy ➜ Execution)
 
 🧠 “The goal of OPL‑Lang is to become the interface language between human intent and automated strategy engines.”
 
@@ -370,6 +353,24 @@ In this pipeline:
 - **Execution engines** consume this structure and transform it into live trades, backtests, or simulations.
 
 ---
+## 13 Versioning & Interoperability
+
+OPL‑Lang follows **Semantic Versioning 2.0.0**:
+
+* **MAJOR** – incompatible grammar changes (e.g. 2.0).
+* **MINOR** – backwards‑compatible feature additions (e.g. 1.1).
+* **PATCH** – editorial fixes, no grammar impact (e.g. 1.0.1).
+
+A source file **MUST** begin with a magic header within the first 256 bytes:
+
+```text
+opl-lang 1.0   # comment text allowed after version token
+```
+
+Tools **MUST** reject files whose major version token they do not recognise.
+
+---
+
 © 2025 OPL‑Lang Authors. MIT License. Version 1.0.0‑rc2 (20 May 2025)
 
 
