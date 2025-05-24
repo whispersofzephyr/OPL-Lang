@@ -7,6 +7,7 @@ A lean DSL for describing and generating equity option strategies.
 
 ## 🔗 相关链接
 
-- 📦 [GitHub 仓库](https://github.com/你/opl-lang)
+
 - 📘 [English Spec](opl-lang-spec-en-v1.0.0-rc2.md)
 - 📙 [中文规范](opl-lang-spec-zh-v1.0.0-rc2.md)
+- 📦 [GitHub 仓库](https://github.com/whispersofzephyr/opl-lang)
