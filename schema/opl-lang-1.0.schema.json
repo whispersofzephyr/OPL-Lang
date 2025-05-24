@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OPL-Lang Strategy JSON representation (placeholder)",
+  "description": "Full schema forthcoming in v1.0.0 GA",
+  "type": "object"
+}
