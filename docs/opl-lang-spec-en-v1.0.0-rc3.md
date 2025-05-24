@@ -1,4 +1,4 @@
-[← 回到目录](index.md)
+[← Return to Index](index.md)
 
 📙 [点击查看中文版本 ➜ OPL‑Lang 规范 v1.0.0‑rc3](opl-lang-spec-zh-v1.0.0-rc3.md)
 
@@ -432,3 +432,4 @@ Tools **MUST** reject files whose major version token they do not recognise.
 
 © 2025 OPL‑Lang Authors. MIT License. Version 1.0.0‑rc3 (20 May 2025)
 
+[← Return to Index](index.md)
