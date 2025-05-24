@@ -1,4 +1,4 @@
-[← Back to index](https://www.notion.so/index.md)
+[← 回到目录](index.md)
 
 📙 [点击查看中文版本 ➜ OPL‑Lang 规范 v1.0.0‑rc3](opl-lang-spec-zh-v1.0.0-rc3.md)
 
