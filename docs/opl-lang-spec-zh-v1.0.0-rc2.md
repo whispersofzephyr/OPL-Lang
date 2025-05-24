@@ -1,19 +1,5 @@
 opl-lang 1.0   # magic header for files
 
-**For Chinese version click here** / **中文版本请点击这里**  
-ZH 📄 [OPL-Lang 规范 – 精简版 v1.0.0-rc2](opl-lang-spec-zh-v1.0.0-rc2.md)
-
-# OPL-Lang White Paper – lean specification **v 1.0.0-rc2**
-
-> **Status**  Release Candidate 2 – 20 May 2025  
-> **Audience**  quant / compiler / API implementers  
-> **License**  MIT  
-> **Non-Goals**  pedagogy, payoff diagrams (see forthcoming trader book)
-
----
-
-opl-lang 1.0   # magic header for files
-
 > **For English version click here** / **英文版本请点击这里**
 > EN 📄 [OPL‑Lang White Paper – lean specification v1.0.0‑rc2](opl-lang-spec-en-v1.0.0-rc2.md)
 
