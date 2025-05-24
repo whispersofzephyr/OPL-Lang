@@ -344,7 +344,32 @@ opl-lang 1.0   # comment text allowed after version token
 Tools **MUST** reject files whose major version token they do not recognise.
 
 ---
+## 13 Appendix C — Language Integration Flow (Natural Language ➜ Strategy ➜ Execution)
 
+🧠 “The goal of OPL‑Lang is to become the interface language between human intent and automated strategy engines.”
+
+This section illustrates the conceptual pipeline where OPL‑Lang serves as the semantic bridge between human input and machine execution.
+
+```text
+Human natural-language intent
+          ↓
+AI Semantic Parser (LLM / rules / few-shot examples)
+          ↓
+OPL‑Lang Strategy Structure (intent + constraints + components)
+          ↓
+Execution Engine (Python / Rust / C++)
+          ↓
+Backtest / Live Order System / Portfolio Simulator
+
+```
+In this pipeline:
+
+- **Humans** express high-level intent (e.g. "I expect a breakout with rising volatility, low max loss").
+- **AI** parses the intent into OPL‑Lang, using predefined mappings or trained models.
+- **OPL‑Lang** provides the structural syntax, fully expressing direction, risk, horizon, capital, etc.
+- **Execution engines** consume this structure and transform it into live trades, backtests, or simulations.
+
+---
 © 2025 OPL‑Lang Authors. MIT License. Version 1.0.0‑rc2 (20 May 2025)
 
 
