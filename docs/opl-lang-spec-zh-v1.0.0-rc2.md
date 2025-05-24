@@ -322,3 +322,5 @@ opl-lang 1.0   # 可附注释
 工具 **MUST** 拒绝解析无法识别主版本号的文件。
 
 © 2025 OPL‑Lang Authors. MIT License. 版本 1.0.0‑rc2 (2025-05-20)
+
+[⬅ 返回首页](index.md)
