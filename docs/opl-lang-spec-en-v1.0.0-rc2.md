@@ -348,3 +348,4 @@ Tools **MUST** reject files whose major version token they do not recognise.
 
 © 2025 OPL‑Lang Authors. MIT License. Version 1.0.0‑rc2 (20 May 2025)
 
+[⬅ Back to index](index.md)
