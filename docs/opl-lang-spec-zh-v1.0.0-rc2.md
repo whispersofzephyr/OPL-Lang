@@ -1,4 +1,4 @@
-[← Back to index](index.md)
+[← 回到目录](index.md)
 
 📘 [Click here for English version ➜ OPL‑Lang Whitepaper v1.0.0‑rc2](opl-lang-spec-en-v1.0.0-rc2.md)
 
