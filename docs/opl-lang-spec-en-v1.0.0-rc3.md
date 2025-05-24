@@ -166,17 +166,19 @@ Engines **MAY** add further guards (e.g. IV‑crush, liquidity drought) using th
 ### 4.1 Path A — Intent‑Driven, Stepwise Logic‑Tree
 
 ```
-base ← MapIntentToO(intent, vega_style)        # 主腿 / 目的腿
+base ← MapIntentToO(intent, vega_style)        # Primary leg / target leg
 S    ← {base}
 loop
-    ── market_feedback(S, snapshot)            # 根据价格/IV 细调 Greeks
-    ── ensure_max_risk(S, max_risk)            # 若超限 → 添保护腿/缩价差
-    ── apply_premium_offset(S, premium_offset) # 若需融资 → 添收权利金副腿
-    ── liquidity_capital_check(S)              # 资金 & 流动性
+    ── market_feedback(S, snapshot)            # Fine-tune Greeks based on price/IV feedback
+    ── ensure_max_risk(S, max_risk)            # If over limit → add hedge leg / narrow spread
+    ── apply_premium_offset(S, premium_offset) # If financing needed → add premium-collecting sub-leg
+    ── liquidity_capital_check(S)              # Capital & liquidity check
     if constraints_ok(S) break
 end
 return S
+
 ```
+
 
 *Key points*
 
