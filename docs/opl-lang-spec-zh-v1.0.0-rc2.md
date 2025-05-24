@@ -1,4 +1,6 @@
-opl-lang 1.0   # magic header for files
+[← Back to index](index.md)
+
+📙 [点击查看中文版本 ➜ OPL‑Lang 规范 v1.0.0‑rc2](opl-lang-spec-zh-v1.0.0-rc2.md)
 
 > **English version click here / 英文版本请点此**
 > EN 📄 [OPL‑Lang White Paper – lean specification v1.0.0‑rc2](opl-lang-spec-en-v1.0.0-rc2.md)
