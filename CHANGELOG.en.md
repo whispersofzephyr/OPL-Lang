@@ -46,5 +46,5 @@
 
 ---
 
-**See full release**: [opl-lang-spec-en-v1.0.0-rc6.md](opl-lang-spec-en-v1.0.0-rc6.md)  
-**Previous version**: [v1.0.0-rc3](opl-lang-spec-en-v1.0.0-rc3.md)
+**See full release**: [opl-lang-spec-en-v1.0.0-rc6.md](docs/opl-lang-spec-en-v1.0.0-rc6.md)  
+**Previous version**: [v1.0.0-rc3](docs/opl-lang-spec-en-v1.0.0-rc3.md)
