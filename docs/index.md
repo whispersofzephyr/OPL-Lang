@@ -11,6 +11,6 @@ A lean DSL for describing and generating equity option strategies.
 - 📦 [GitHub 仓库](https://github.com/whispersofzephyr/opl-lang)
 
 
-- 📝 [Change Log (English)](../CHANGELOG.md)
+- 📝 [Change Log (English)](../CHANGELOG.en.md)
 - 📝 [更新日志（中文）](../CHANGELOG.zh.md)
 
