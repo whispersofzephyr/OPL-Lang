@@ -1,7 +1,7 @@
 # 📌 版本更新日志 – OPL‑Lang v1.0.0‑rc6
 
 **发布日期**：2025‑05‑24  
-**对比版本**：[v1.0.0‑rc3](opl-lang-spec-en-v1.0.0-rc3.md)
+**对比版本**：[v1.0.0‑rc3](docs/opl-lang-spec-en-v1.0.0-rc3.md)
 
 ---
 
@@ -46,5 +46,5 @@
 
 ---
 
-**查看完整规范**：[opl-lang-spec-en-v1.0.0-rc6.md](opl-lang-spec-en-v1.0.0-rc6.md)  
-**上一个版本**：[v1.0.0-rc3](opl-lang-spec-en-v1.0.0-rc3.md)
+**查看完整规范**：[opl-lang-spec-en-v1.0.0-rc6.md](docs/opl-lang-spec-en-v1.0.0-rc6.md)  
+**上一个版本**：[v1.0.0-rc3](docs/opl-lang-spec-en-v1.0.0-rc3.md)
