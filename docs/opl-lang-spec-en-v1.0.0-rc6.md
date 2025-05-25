@@ -156,7 +156,7 @@ Engines **MAY** add further guards (e.g. IV‑crush, liquidity drought) under `W
 | **L**  | leg‑set (fixed 1) | {O₁…Oₙ}                |
 | **Q**  | quantity          | vector **Q** = (q₁…qₙ) |
 
-*For linear legs only ************`scale_qty`************, ************`add_leg`************, and ************`remove_leg`************ apply; ************`shift_strike`************ and ************`roll_tenor`************ are ************NOP************.*
+*For linear legs only **`scale_qty`**, **`add_leg`**, and **`remove_leg`** apply; **`shift_strike`** and **`roll_tenor`** are **NOP**
 
 Changing {K, T, L, Q} is semantically equivalent to inserting, removing, or rescaling legs and therefore re‑weights the composite Greeks.
 
@@ -450,13 +450,13 @@ Backtest / Live Order System / Portfolio Simulator
 
 In this pipeline:
 
-\- \*\*Humans\*\* express high-level intent (e.g. "I expect a breakout with rising volatility, low max loss").
+- **Humans** express high-level intent (e.g. "I expect a breakout with rising volatility, low max loss").
 
-\- \*\*AI\*\* parses the intent into OPL‑Lang, using predefined mappings or trained models.
+- **AI** parses the intent into OPL‑Lang, using predefined mappings or trained models.
 
-\- \*\*OPL‑Lang\*\* provides the structural syntax, fully expressing direction, risk, horizon, capital, etc.
+- **OPL‑Lang** provides the structural syntax, fully expressing direction, risk, horizon, capital, etc.
 
-\- \*\*Execution engines\*\* consume this structure and transform it into live trades, backtests, or simulations.
+- **Execution engines** consume this structure and transform it into live trades, backtests, or simulations.
 
 ## 13 Versioning & Interoperability
 
