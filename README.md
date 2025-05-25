@@ -16,7 +16,7 @@
 | 🇨🇳 中文 | [中文规范 (v1.0.0-rc6)](docs/opl-lang-spec-zh-v1.0.0-rc6.md) |
 
 
-📄 **Change Log**: [English](CHANGELOG.md) • [中文](CHANGELOG.zh.md)
+📄 **Change Log**: [English](/CHANGELOG.md) • [中文](/CHANGELOG.zh.md)
 
 ---
 
