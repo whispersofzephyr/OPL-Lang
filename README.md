@@ -15,8 +15,8 @@
 | 🇺🇸 English | [English Spec (v1.0.0-rc6)](docs/opl-lang-spec-en-v1.0.0-rc6.md) |
 | 🇨🇳 中文 | [中文规范 (v1.0.0-rc6)](docs/opl-lang-spec-zh-v1.0.0-rc6.md) |
 
-### 📐 JSON Schema
-- [`schema/opl-lang-1.0.schema.json`](schema/opl-lang-1.0.schema.json)
+
+📄 **Change Log**: [English](CHANGELOG.md) • [中文](CHANGELOG.zh.md)
 
 ---
 
@@ -39,15 +39,18 @@ Key design goals:
 
 ```
 docs/
-  ├─ index.md                   ← GitHub Pages homepage
-  ├─ opl-lang-spec-en-v1.0.0-rc3.md
+  ├─ index.md                         ← GitHub Pages homepage
+  ├─ opl-lang-spec-en-v1.0.0-rc6.md
+  ├─ opl-lang-spec-en-v1.0.0-rc3.md  ← archived
+  ├─ opl-lang-spec-zh-v1.0.0-rc6.md
   └─ opl-lang-spec-zh-v1.0.0-rc3.md
 schema/
   └─ opl-lang-1.0.schema.json
-samples/                        ← (optional) strategy examples
+samples/                              ← (optional) strategy examples
 README.md
-LICENSE                         ← MIT license declaration
-
+CHANGELOG.md
+CHANGELOG.zh.md
+LICENSE                                ← MIT license declaration
 ```
 
 ---
@@ -56,7 +59,8 @@ LICENSE                         ← MIT license declaration
 
 Release tags follow [Semantic Versioning 2.0.0](https://semver.org/):
 
-- **`v1.0.0-rc3`** — current public candidate  
+- **`v1.0.0-rc6`** — current public candidate  
+- **`v1.0.0-rc3`** — archived previous spec  
 - Future: tag **`v1.0.0`** after schema & sample libraries stabilise
 
 ---
@@ -73,4 +77,5 @@ Interested in parsers, playgrounds, or runtime engines?
 Open an issue or submit a PR — prototypes & discussions are encouraged.
 
 欢迎熟悉编程语言、编译器或量化系统的开发者参与贡献！
+
 
