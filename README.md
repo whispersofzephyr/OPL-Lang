@@ -6,7 +6,7 @@
 
 📘 **[Live white-paper site →](https://whispersofzephyr.github.io/OPL-Lang/)**
 
-- 🇨🇳 [中文介绍 →](README.zh.md)
+🔗 - 🇨🇳 [中文介绍 →](README.zh.md)
 
 ---
 
