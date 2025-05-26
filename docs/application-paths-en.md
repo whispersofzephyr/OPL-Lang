@@ -93,7 +93,7 @@ This can be implemented via an interactive questionnaire or multiple-choice inte
 |-------|----------------|
 | Just starting? | Build a logic-tree Path A prototype using human-readable JSON |
 | UI designer? | Create an interactive “strategy wizard” using Path A steps |
-| Quant dev? | Try implementing enhanced Path A or Path B for a single intent + constraint case |
+| Quant dev? | Try implementing enhanced Path A+ or Path B for a single intent + constraint case |
 | Educational platform? | Use Path A to let users explore strategies with structural guidance |
 | Institutional tool builder? | Implement Path C as a backend engine to power Greek-based strategy suggestions |
 
