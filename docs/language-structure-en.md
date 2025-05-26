@@ -78,4 +78,41 @@ and that real-world strategy logic must be expressed not as static definitions, 
 
 ---
 
+## 4. Generation Paths and Application Layer
+
+While OPL‑Lang focuses on structural expression, its real-world power is best realized when paired with systems that can **generate**, **adjust**, and **exit** strategies based on user input or market conditions.
+
+To support different usage scenarios, OPL‑Lang is designed to be compatible with multiple generation pathways:
+
+- 🧩 **Path A** — a logic-tree strategy builder guided by human input (e.g., UI apps)
+- 🔧 **Path B** — a machine compiler that assembles structures from intent and constraints
+- 🔍 **Path C** — a reverse solver that constructs strategies from a target Greek profile or payoff behavior
+
+These paths reflect increasing levels of automation and can be combined with lifecycle logic to create fully autonomous, constraint-respecting strategy agents.
+
+For full details on implementation layers and usage, see  
+📘 [Deployment Paths →](application-paths-en.md)
+
+---
+## 5. Lifecycle Control: Adjustment and Exit
+
+While the core structure of OPL‑Lang focuses on initial strategy composition (`S = { O₁, O₂, ... }`), the language also provides built-in mechanisms for **managing the strategy across time** — enabling **reactivity and closure**.
+
+Two key modules support this:
+
+- 🔄 **Adjustment Module** — allows a strategy to adapt when initial assumptions weaken but are not invalidated. It includes:
+  - `adjust_when`: boolean triggers for adjustment attempts
+  - `adjust_playbook`: ordered list of actions (e.g., roll, hedge, rebalance)
+  - `abort_if`: guards that cancel adjustment and escalate to exit
+
+- ⏹ **Exit Module** — defines how and when a strategy is terminated. It includes:
+  - `exit_mode`: evaluation logic (`first_hit`, `all_required`, or `machine_decide`)
+  - `exit_triggers`: condition list (price, PnL, time, etc.)
+
+These modules make OPL‑Lang not just a language for static structures,  
+but a full **strategy lifecycle DSL** — capable of describing, adapting, and closing positions programmatically.
+
+This empowers both human-guided and machine-driven agents to maintain strategies over time with clear, declarative logic.
+
+
 [← Back to Index](index.md)
