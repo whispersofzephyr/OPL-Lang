@@ -1,6 +1,10 @@
 # OPL‑Lang 中文简介
 
-🔗 [English README →](README.md)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
+📘 **[Live white-paper site →](https://whispersofzephyr.github.io/OPL-Lang/)**
+
+🔗 - EN [English README →](README.md)
 
 ---
 
