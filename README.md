@@ -65,6 +65,20 @@ See [application paths →](docs/application-paths-en.md)
 
 ---
 
+## 🔁 Lifecycle Control
+
+Beyond strategy generation, OPL‑Lang also supports **declarative control over a strategy's behavior across time**.
+
+Two built-in modules allow strategies to evolve:
+
+- **Adjustment Module** — defines when and how a strategy should be modified if assumptions weaken.
+- **Exit Module** — specifies how and when to terminate a position, based on price, PnL, or time.
+
+This makes OPL‑Lang not just a structural DSL, but a **full lifecycle language** — suitable for both human-guided trading and autonomous machine agents.
+
+See [language structure →](docs/language-structure-en.md)
+
+---
 ## 📦 Repository Layout
 
 ```
