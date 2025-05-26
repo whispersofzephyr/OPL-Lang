@@ -2,7 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-📘 **[Live white-paper site →](https://whispersofzephyr.github.io/OPL-Lang/)**
+📘 **[白皮书中英文网页版 →](https://whispersofzephyr.github.io/OPL-Lang/)**
 
 🔗 - EN [English README →](README.md)
 
