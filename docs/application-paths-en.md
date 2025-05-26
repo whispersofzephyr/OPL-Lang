@@ -24,7 +24,9 @@ These paths allow developers to choose implementation levels based on available 
 
 We outline two main **deployment tiers**, aligned with the above paths.
 
-### 🧩 Tier 1: Human-Facing Path A App
+---
+
+### 🧩 Tier 1: Path A – Human-Facing Interactive Logic Tree Strategy Builder
 
 **Ideal for:** solo developers, small teams, education platforms, power traders
 
@@ -32,70 +34,104 @@ We outline two main **deployment tiers**, aligned with the above paths.
 
 Can be implemented via interactive questionnaires or multiple-choice UI. Users can revise inputs in real time and instantly see updated strategy structures.
 
-1. User selects directional bias (bullish, bearish, neutral), target price level, and timeframe.
+1. User selects directional bias (bullish, bearish, neutral), target price level, and expected timeframe.
 2. System initializes the first one or two legs based on input, optionally recommending strike and expiration using human-validated templates.
-3. User defines additional strategy constraints: max risk tolerance, whether to recover premium, whether reduced max profit is acceptable.
-4. System guides user through strategy building via a logic tree (e.g. buy call → add hedge → add credit leg).
-5. Each added leg can use predefined human-validated strategy templates (verticals, calendars, collars) to suggest strike/tenor.
-6. Risk filters, capital usage, and expected payoff validations are shown.
-7. Final strategy is rendered, and may be exported or priced.
+3. User defines additional strategy constraints: max risk, premium recovery, acceptance of capped profit, etc.
+4. System guides user through logic-tree steps (e.g. buy call → add hedge → add credit leg).
+5. For each leg, system can recommend strike/tenor using common structures like verticals, calendars, or collars.
+6. System displays risk filters, capital usage, and expected payoff.
+7. Final strategy is rendered and optionally exported or priced.
 
 **Notes:**
 
-- Path A uses human-validated templates based on common trader experience.
-- This tier **does not require full Greeks calculation**, since strategy templates already encode reasonable Greeks sensitivity profiles.
-- The main advantages are **educational clarity and structural consistency**.
+- Path A uses human-validated strategy templates.
+- This tier **does not require full Greeks calculation**, as templates embed reasonable sensitivity structures.
+- Key benefits: **educational clarity and structural consistency**.
 
 ---
 
-### 🧩 Tier 1.5: Path A+ – Machine-Enhanced Strategy Generation
+### 🧩 Tier 1.5: Path A+ – Machine-Enhanced Logic Tree Strategy Generation
 
-**Ideal for:** quant research groups, trading platforms, institutions
+**Ideal for:** quant research teams, trading platforms, institutional tools
 
 **Workflow:**
 
-1. User selects directional bias, price target, and time horizon.
-2. User defines structural constraints: max risk, cost-saving preference, willingness to cap profit, etc.
-3. User applies additional filters: risk/reward ratio, capital efficiency, option liquidity, etc.
-4. System automatically runs the logic-tree-based builder, step by step.
-5. The first legs are initialized with Greeks validation (strike and tenor selected to ensure sensitivity balance).
-6. Each additional step uses Greeks-aware logic to propose and validate legs.
-7. If any constraint fails, the system backtracks or modifies legs to meet all criteria.
-8. Final strategy is rendered and optionally exported or priced.
+1. User selects directional bias, target price, and timeframe.
+2. User defines structural constraints: risk limits, cost reduction preferences, profit cap tolerance, etc.
+3. User adds filter conditions: risk/reward ratio, capital efficiency, option liquidity, etc.
+4. System automatically executes the logic-tree flow.
+5. Initial legs are selected using Greeks validation (to ensure balanced sensitivity).
+6. Each subsequent leg is proposed using Greeks-aware logic.
+7. If any constraint is violated, the system backtracks or adjusts.
+8. Final strategy is rendered and optionally priced/exported.
 
 **Notes:**
 
-- A+ does not rely on static human-validated templates, but dynamically builds and validates strategies step-by-step.
-- Every change to strike, expiration, or number of legs is driven by the cumulative Greek profile of the entire strategy.
-- This enables more complex and precise structures than traditional human-validated templates, while maintaining compatibility with OPL‑Lang semantic logic.
+- A+ does not rely on static human templates; it dynamically builds and validates each step.
+- Every modification to strike, expiration, or leg count is driven by the **cumulative Greeks profile** of the strategy.
+- This enables more complex yet interpretable structures, expressible in OPL‑Lang.
 
 ---
 
-### ⚙️ Tier 2: Compiler‑Level Path B / C Engine
+### ⚙️ Tier 2: Path B – Global Structural Optimization with Greeks Balancing
 
-**Ideal for:** quant platforms, automated strategy systems, algorithmic structure design teams
+**Ideal for:** quant platforms, automated strategy engines, structural optimization teams
 
 **Workflow:**
 
-- **Path B:** Accepts trader intent (e.g. “bullish but risk-capped”) + structural constraints (e.g. “max loss < $X”) → compiles strategy structure. Then use Greeks profile target to make changes to the strategy structure, adjusting strike price, expiration date, add or remove or replace legs. 
-- **Path C:** Accepts target behavior profile (e.g. “delta-neutral and theta-positive”) → reverse solves for valid structures based on Greek response.
+1. User inputs directional intent, price target, timeframe, structural constraints (risk, premium recovery, profit cap), and screening filters (risk/reward ratio, capital use, liquidity).
+2. System compiles an initial strategy structure from the input.
+3. System optimizes the structure using a Greek profile target — adjusting strike, expiration, leg configuration, etc.
+4. Constraints are re-validated; if violated, legs are backtracked or altered.
+5. Greek profile is checked again.
+6. Final strategy is rendered and optionally exported/priced.
 
 **Requirements:**
 
-- Structural inference engine + Greek model
-- Local optimizers or heuristics (e.g. adjust strike, roll expiration, add/remove legs)
-- Simulation or constraint validation modules
+- Strategy inference engine + Greeks modeling
+- Local optimizers or heuristics (strike adjustment, tenor rolling, leg tuning)
+- Simulation and constraint validation modules
 
 **Output:**
 
-- Fully verified strategy structures
-- Compatible with pricing engines, execution systems, or backtest modules
+- Fully validated multi-leg strategies
+- Compatible with pricing engines, execution platforms, and backtest systems
 
 **Notes:**
 
-- B and C do not depend on any pre-built human templates.
-- Compared to A+, Path B allows **global structural optimization**, using post-construction Greek balancing.
-- Path C enables **behavior-first design**, solving for strategy structure from target risk characteristics.
+- Path B bypasses all human templates.
+- Compared to A+, Path B allows **global post-assembly optimization** of strategy Greeks.
+
+---
+
+### ⚙️ Tier 3: Path C – Behavior-Driven Strategy Compiler Responsive to Market Conditions
+
+**Ideal for:** adaptive strategy engines, market-reactive automation, delta-neutral/Theta-positive systems
+
+**Workflow:**
+
+1. System receives current market inputs and a target Greeks profile (e.g. delta-neutral, theta-positive), or autonomously selects optimal profile for current conditions.
+2. System compiles one or more candidate strategy structures from Greeks profile.
+3. Strategy candidates are validated against structural constraints (risk, cost, capital use, liquidity, etc.).
+4. Final structure is selected, adjusted, and rendered.
+5. System may continue to monitor market input and adjust the structure dynamically.
+
+**Requirements:**
+
+- Reactive inference engine + Greeks profile matcher
+- Optimizers and rebalancers
+- Constraint-aware simulation environment
+
+**Output:**
+
+- Fully dynamic, market-responsive strategy structure
+- Integrated with pricing/execution/maintenance pipelines
+
+**Notes:**
+
+- Path C is template-free and reactive.
+- It enables **Greeks-driven behavioral design** that adapts over time.
+- Supports ongoing strategy adjustment and real-time maintenance.
 
 
 ---
