@@ -1,3 +1,5 @@
+[← Back to Index](index.md)
+
 # 📌 Change Log – OPL‑Lang v1.0.0‑rc6
 
 **Release Date**: 2025‑05‑24  
@@ -48,3 +50,5 @@
 
 **See full release**: [opl-lang-spec-en-v1.0.0-rc6.md](opl-lang-spec-en-v1.0.0-rc6.md)  
 **Previous version**: [v1.0.0-rc3](opl-lang-spec-en-v1.0.0-rc3.md)
+
+[← Back to Index](index.md)
