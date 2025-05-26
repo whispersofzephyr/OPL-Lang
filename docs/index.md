@@ -16,8 +16,8 @@ OPL‑Lang 的核心语法定义，包括模块结构和 C‑O‑S 表达体系�
 ## 📝 更新日志 Changelog  
 记录每个版本的主要变更内容与发布历史。
 
-- 🇺🇸 [Changelog (EN)](../CHANGELOG-en.md)
-- 🇨🇳 [更新日志 (中文)](../CHANGELOG-zh.md)
+- 🇺🇸 [Changelog (EN)](CHANGELOG.en.md)
+- 🇨🇳 [更新日志 (中文)](CHANGELOG.zh.md)
 
 ---
 
