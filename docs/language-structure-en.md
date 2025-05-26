@@ -114,5 +114,7 @@ but a full **strategy lifecycle DSL** — capable of describing, adapting, and c
 
 This empowers both human-guided and machine-driven agents to maintain strategies over time with clear, declarative logic.
 
+OPL‑Lang is designed not just to describe what a strategy is,  
+but also how it is **built**, **adjusted**, and **completed** — **from entry to exit**.
 
 [← Back to Index](index.md)
